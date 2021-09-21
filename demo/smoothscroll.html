@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmoothScroll | JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/smoothscroll.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div class="header__title"><a href="/">JavaScriptでつくるエフェクト</a></div>
+            <!-- <ul>
+                <li><a href="#">エフェクト一覧</a></li>
+            </ul> -->
+        </header>
+        <div id="main">
+            <h2>スムーススクロール デモ</h2>
+            <ul class="scrollMenu">
+                <li class="scrollItem"><a href="#content1">Re:Union</a></li>
+                <li class="scrollItem"><a href="#content2">Wait?</a></li>
+                <li class="scrollItem"><a href="#content3">Lovers, Birthday, Music</a></li>
+                <li class="scrollItem"><a href="#content4">KEITH</a></li>
+            </ul>
+
+            <section id="content1" class="content">
+                <h3>Re:Union</h3>
+                <div class="contentDetail"><img src="src/img/reunion.jpeg" alt=""></div>
+            </section>
+            <section id="content2" class="content">
+                <h3>Wait?</h3>
+                <div class="contentDetail"><img src="src/img/wait.jpg" alt=""></div>
+            </section>
+            <section id="content3" class="content">
+                <h3>Lovers, Birthday, Music</h3>
+                <div class="contentDetail"><img src="src/img/lovers,birthday,music.jpg" alt=""></div>
+            </section>
+            <section id="content4" class="content">
+                <h3>KEITH</h3>
+                <div class="contentDetail"><img src="src/img/keith.jpeg" alt=""></div>
+            </section>
+        </div>
+        <div class="toPageTop"><a href="/index.html">TOPへ</a></div>
+        <footer id="footer"></footer>
+    </div>
+    <script src="src/js/smoothscroll.js"></script>
+</body>
+</html>
