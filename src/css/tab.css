@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+#tabMenu {
+    display: flex;
+    padding: 0;
+    border-bottom: 1px solid #222;
+}
+
+.tabItem {
+    padding: 10px 20px;
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+}
+
+.tabItem:first-child {
+    border-left: 1px solid #222;
+}
+
+.tabItem.is-active {
+    border-top: 1px solid #1160bb;
+    border-right: 1px solid #1160bb;
+    border-left: 1px solid #1160bb;
+    background: #1160bb;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+
+.tabContent {
+    display: none;
+}
+
+.tabContent.is-show {
+    display: block;
+}

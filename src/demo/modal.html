@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal | JavaScript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/modal.css">
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div class="header__title"><a href="/">JavaScriptでつくるエフェクト</a></div>
+            <!-- <ul>
+                <li><a href="#">エフェクト一覧</a></li>
+            </ul> -->
+        </header>
+        <div id="main">
+            <h2>モーダル デモ</h2>
+            <button class="modalBtn modal__open" type="button" id="modalOpen">詳細を見る</button>
+            <div id="modal" class="modal">
+                <div class="modal__overlay js-modal-close">
+                    <div class="modal-container">
+                        <div class="modal-content">
+                            <p><img src="/src/img/kehai.jpg" alt=""></p>
+                            <button class="modalBtn modal__close js-modal-close" type="button">閉じる</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modalBg"></div>
+        </div>
+        <div class="toPageTop"><a href="/index.html">TOPへ</a></div>
+        <footer id="footer"></footer>
+    </div>
+    <script src="/src/js/modal.js"></script>
+</body>
+</html>

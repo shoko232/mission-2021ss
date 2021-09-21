@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.introductionInner {
+    margin: auto 0;
+}
+
+.introductionText {
+    display: block;
+    padding-top: 30px;
+}
+
+.introductionImg {
+    width: 400px;
+}
+
+.functionList {
+    display: flex;
+}
+
+.functionItem {
+    width: 25%;
+    margin-right: 20px;
+    /* border-radius: 5px;
+    background: #fff; */
+    border: 1px solid #333;
+    text-align: center;
+    cursor: pointer;
+}
+
+.functionItem:last-child {
+    margin-right: 0;
+}
+
+.functionItem a {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    color: #333;
+    background: transparent;
+    transition: .3s;
+}
+
+.functionItem a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2987d;
+    transform-origin: 0% 100%;
+    transform: scaleX(0);
+    transition: transform ease .3s;
+    z-index: -1;
+}
+
+.functionItem a::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.functionItem a:hover {
+    color: #fff;
+}
+
+.functionItem a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+}

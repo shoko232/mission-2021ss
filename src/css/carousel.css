@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.carousel {
+    position: relative;
+    width: 500px;
+    height: 330px;
+    margin: 80px auto 20px;
+}
+
+.carouselInner {
+    border: 2px solid #d2d2d2;
+    overflow: hidden;
+}
+
+.carouselList {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.carouselItem {
+    flex-shrink: 0;
+    width: 500px;
+    height: 330px;
+}
+
+.carouselImg1 {
+    background: url('/src/img/reunion.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.carouselImg2 {
+    background: url('/src/img/keith.jpeg') no-repeat;
+    background-size: cover;
+}
+
+.carouselImg3 {
+    background: url('/src/img/kehai.jpg') no-repeat;
+    background-size: cover;
+}
+
+.prev {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #333;
+    border-right: 2px solid #333;
+    cursor: pointer;
+    transform: translateY(-50%) rotate(-45deg);
+}

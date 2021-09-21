@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.tabItem {
+    +.is-active {
+        background: orange;
+        transition: all 0.2s ease-out;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.tabContent {
+    display: none;
+    +.is-show {
+        display: block;
+    }
+}
