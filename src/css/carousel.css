@@ -25,17 +25,17 @@
 }
 
 .carouselImg1 {
-    background: url('/src/img/reunion.jpeg') no-repeat;
+    background: url('../img/reunion.jpeg') no-repeat;
     background-size: cover;
 }
 
 .carouselImg2 {
-    background: url('/src/img/keith.jpeg') no-repeat;
+    background: url('../img/keith.jpeg') no-repeat;
     background-size: cover;
 }
 
 .carouselImg3 {
-    background: url('/src/img/kehai.jpg') no-repeat;
+    background: url('../img/kehai.jpg') no-repeat;
     background-size: cover;
 }
 
